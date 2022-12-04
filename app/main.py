@@ -6,8 +6,8 @@ app = FastAPI()
 
 @app.get('/news')
 def html():
-    resposne = requests.request('GET','https://newsapi.org/v2/everything?q=education&from=2022-11-04&sortBy=publishedAt&apiKey=2549e51b02384fafa6675e6eea77ba4a')
-    return resposne.json()
+    response = requests.request('GET','https://newsapi.org/v2/everything?q=education&from=2022-11-04&sortBy=publishedAt&apiKey=2549e51b02384fafa6675e6eea77ba4a')
+    return response.json()
 
 origins = ["*"]
 
